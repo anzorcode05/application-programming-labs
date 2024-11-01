@@ -20,4 +20,4 @@ def generate_annotation_file(img_folder: str, output_csv: str) -> None:
                 abs_path = os.path.abspath(rel_path)
                 writer.writerow([abs_path, rel_path])
     except (OSError, csv.Error) as e:
-        print(f"Error writing CSV file: {e}")
+        raise

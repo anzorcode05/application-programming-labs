@@ -23,4 +23,4 @@ def fetch_images(search_term: str, count: int, save_dir: str) -> None:
         )
         crawler.crawl(keyword=search_term, max_num=count)
     except Exception as e:
-        print(f"Error during image crawling: {e}")
+        raise
