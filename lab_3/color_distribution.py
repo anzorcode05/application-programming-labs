@@ -4,9 +4,9 @@ from numpy import ndarray
 
 def generate_color_histogram(image: ndarray) -> list:
     """
-    Computes color histograms for each channel in the image.
-    :param image: The input image as a NumPy array.
-    :return: A list containing histograms for each color channel.
+    Вычисляет цветовые гистограммы для каждого канала изображения
+    :параметр image: Входное изображение в виде числового массива.
+    :return: Список, содержащий гистограммы для каждого цветового канала.
     """
 
     color_histograms = []
@@ -19,8 +19,8 @@ def generate_color_histogram(image: ndarray) -> list:
 
 def display_histogram(color_histograms: list) -> None:
     """
-    Displays the color histograms for each channel in a plot.
-    :param color_histograms: List of histograms for color channels.
+    Отображает цветовые гистограммы для каждого канала на графике.
+    :параметр color_histograms: Список гистограмм для цветовых каналов.
     """
 
     color_codes = ['b', 'g', 'r']
