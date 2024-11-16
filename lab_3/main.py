@@ -16,7 +16,7 @@ def create_argument_parser():
     parser.add_argument('new_height', type=int, help='New height for the image')
     return parser.parse_args()
 
-if __name__ == "__main__":
+def main():
     try:
         # Обработка аргументов
         args = create_argument_parser()
@@ -44,3 +44,6 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Unexpected error: {e}")
         sys.exit(1)
+
+if __name__ == "__main__":
+    main()
