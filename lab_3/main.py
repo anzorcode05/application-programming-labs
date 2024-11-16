@@ -28,7 +28,7 @@ def main():
         # Отображение оригинального изображения
         display_image(original_image)
 
-        # Генерация и отображение гистограммы
+        # Генерируем и отображаем гистограмму
         histograms = generate_color_histogram(original_image)
         display_histogram(histograms)
 
